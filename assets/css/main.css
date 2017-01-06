@@ -402,13 +402,18 @@ template {
 [hidden] {
   display: none; }
 
+.wrap {
+  display: block;
+  overflow-x: hidden; }
+
 .container {
   display: -ms-flexbox;
   display: flex;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
   background-color: #919191;
-  padding: 30px 0px; }
+  padding: 30px 0px;
+  margin: 0px -15px; }
   .container .col {
     padding: 0 15px;
     width: 33.33%; }
@@ -421,3 +426,41 @@ template {
 
 body {
   background-color: #ddd; }
+
+header nav {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -ms-flex-pack: justify;
+      justify-content: space-between;
+  -ms-flex-align: center;
+      align-items: center;
+  background-color: #777777;
+  padding: 30px 0px; }
+  header nav ul {
+    display: -ms-flexbox;
+    display: flex;
+    list-style: none;
+    padding: 0px; }
+    header nav ul li {
+      padding: 0 0 0 15px; }
+
+footer {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -ms-flex-pack: justify;
+      justify-content: space-between;
+  -ms-flex-align: center;
+      align-items: center;
+  background-color: #aaaaaa;
+  padding: 30px 0px; }
+  footer ul {
+    display: -ms-flexbox;
+    display: flex;
+    list-style: none;
+    padding: 0px; }
+    footer ul li {
+      padding: 0 15px 0 0; }
