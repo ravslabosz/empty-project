@@ -407,12 +407,14 @@ template {
   overflow-x: hidden; }
 
 .container {
-  display: -ms-flexbox;
-  display: flex;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
+  max-width: 1100px;
   padding: 30px 0px;
   margin: 0 auto; }
+  .container.flex {
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap; }
   .container > * {
     padding: 0 15px; }
   .container .col-1 {
@@ -461,7 +463,7 @@ header nav {
     header nav ul li {
       padding: 0 0 0 15px; }
 
-footer.container {
+footer {
   display: -ms-flexbox;
   display: flex;
   -ms-flex-wrap: wrap;
@@ -472,12 +474,12 @@ footer.container {
       align-items: center;
   background-color: #aaaaaa;
   padding: 30px 0px; }
-  footer.container nav ul {
+  footer nav ul {
     display: -ms-flexbox;
     display: flex;
     list-style: none;
     padding: 0px; }
-    footer.container nav ul li {
+    footer nav ul li {
       padding: 0 15px 0 0; }
-  footer.container p {
+  footer p {
     padding: 0 15px; }
